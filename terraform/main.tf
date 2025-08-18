@@ -1,6 +1,3 @@
-variable "grafana_url" {}
-variable "grafana_auth" {}
-
 # Import all dashboards in dashboards/ folder
 locals {
   dashboards = fileset("${path.module}/dashboards", "*.json")
